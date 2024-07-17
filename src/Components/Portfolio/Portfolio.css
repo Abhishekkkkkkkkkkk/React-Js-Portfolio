@@ -1,0 +1,125 @@
+.portfolio {
+  background-color: #deebee;
+  padding: 110px 85px;
+}
+
+.portfolio .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.portfolio .header button {
+  background-color: #5e3bee;
+  padding: 10px 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.portfolio .header button i {
+  font-size: 26px;
+}
+
+.portfolio .portfo-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio .portfo-items .item {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfo-items .item:hover {
+  border-color: #5e3bee;
+}
+
+.portfolio .portfo-items .item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px 10px 20px 20px;
+}
+
+.portfolio .portfo-items .item .info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px 32px 42px;
+}
+
+.portfolio .portfo-items .item .info p {
+  font-size: 13px;
+}
+
+.portfolio .portfo-items .item .info a {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #5e3bee;
+}
+
+.portfolio .portfo-items .item .info a i {
+  margin-left: 2px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio .header h3 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio .portfo-items {
+    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio .portfo-items .item {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    padding: 60px 42px;
+  }
+
+  .portfolio .portfo-items {
+    gap: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .portfolio {
+    padding: 42px 0px;
+  }
+  .portfolio .header {
+    padding: 25px;
+    /* display: flex;
+    justify-content: space-around; */
+  }
+
+  .portfolio .header button {
+    font-size: 15px;
+    padding: 14px 20px;
+  }
+
+  .portfolio .portfo-items .item {
+    width: 80%;
+  }
+}
